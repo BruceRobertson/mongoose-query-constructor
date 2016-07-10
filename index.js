@@ -21,7 +21,7 @@ function init() {
 	console.log('Update', extendedQuery.getUpdate());
 	extendedQuery.exec(function(err, result) {
 		if (err) {
-			console.log(err);
+			throw err;
 		}
 		else {
 			console.log('car updated', result);
